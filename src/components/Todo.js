@@ -2,6 +2,7 @@ import React ,{useState} from 'react';
 import { List , ListItem, ListItemText, ListItemAvatar, Avatar, Button, Modal} from "@mui/material";
 import db from './firebase'
 import '../App.css';
+import 'animate.css'
 
 
 const mystyle = {
@@ -41,9 +42,9 @@ function Todo(props) {
         </Modal>
         <center>
 
-        <div className="container">
+        <div className="container ">
             
-            <List className="todo__list">
+            <List className="todo__list animate__animated animate__fadeInDownBig ">
                 <ListItem>
                     <ListItemAvatar>
                         <Avatar></Avatar>
