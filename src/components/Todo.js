@@ -1,5 +1,5 @@
 import React ,{useState} from 'react';
-import { List , ListItem, ListItemText, ListItemAvatar, Avatar, Button, Modal} from "@mui/material";
+import { List , ListItem, ListItemText, Button, Modal} from "@mui/material";
 import db from './firebase'
 import '../App.css';
 import 'animate.css'
@@ -44,15 +44,14 @@ function Todo(props) {
 
         <div className="container ">
             
-            <List className="todo__list animate__animated animate__fadeInDownBig ">
+            <List className="todo__list animate__animated animate__fadeInDownBig items">
                 <ListItem>
-                    <ListItemAvatar>
-                        <Avatar></Avatar>
-                    </ListItemAvatar>
-                    <ListItemText primary={props.todo.todo} secondary="Dummy deadline"/>
+                    <ListItemText primary={props.todo.todo} />
                 </ListItem>
-                <button onClick={e=>setOpen(true)}>Edit</button>
-                <Button onClick={event=> db.collection('todos').doc(props.todo.id).delete()}>Delete</Button>
+                <div className="buttons">
+                    <i style={{color: 'blue'}} class="fas fa-edit" onClick={e=>setOpen(true)}></i>
+                    <i style={{color: 'red'}} onClick={event=> db.collection('todos').doc(props.todo.id).delete()} class="far fa-trash-alt"></i>
+                </div>
             </List>
         </div>
         </center>

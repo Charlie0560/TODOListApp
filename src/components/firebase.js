@@ -1,18 +1,16 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 const firebaseapp = firebase.initializeApp({
-    apiKey: "AIzaSyDTVHhNlJr11ZjcwdIQRqgB--hTNZONNtk",
-    authDomain: "todo-app-a172d.firebaseapp.com",
-    projectId: "todo-app-a172d",
-    storageBucket: "todo-app-a172d.appspot.com",
-    messagingSenderId: "1042461846677",
-    appId: "1:1042461846677:web:264f9f27dca6dc4ddaff9c",
-    measurementId: "G-4ZZR89ENS6"
-}); 
-
+  apiKey: "AIzaSyAjxoaf_kEQgqb8RThXx__mfEgFG4gzk6E",
+  authDomain: "todoapplication-5a24a.firebaseapp.com",
+  projectId: "todoapplication-5a24a",
+  storageBucket: "todoapplication-5a24a.appspot.com",
+  messagingSenderId: "43994274018",
+  appId: "1:43994274018:web:d366c366950666faf126bb",
+  measurementId: "G-3QL5RPZ207",
+});
 
 const db = firebaseapp.firestore();
 

@@ -38,23 +38,66 @@
 }
 
 
-.container{
-  margin: 5px;
+
+.App{
+  width: 20%;
+  float: right;
+  margin-right: 5%;
+  background-color: transparent;
+  margin-top: 5%;
+ 
+}
+.listsitems{
+  height: 60vh;
+  overflow-y: scroll;
+}
+.listsitems::-webkit-scrollbar{
+  display: none;
 }
 
 .todo__list{
-  /* background-color: #eee; */
   border: 1px solid black;
   border-radius: 50px;
-  width: 80%;
+  width: 100%;
 }
 .todo__list .listitem {
   width: 50%;
   background-color: blue;
   float: left;
-
 }
 
 .todo__list > button{
-  margin-left: 70%;
+  /* margin-left: 70%; */
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  color: aqua;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .App{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+  .listsitems{
+    height: 40vh;
+    overflow-y: scroll;
+  }
+  
 }
